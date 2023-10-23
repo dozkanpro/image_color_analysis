@@ -1,0 +1,26 @@
+{% from "bootstrap5/form.html" import render_form %}
+
+<html>
+<head>
+    <title>Top Colors from Image</title>
+    {% block styles %}
+        {{ bootstrap.load_css() }}
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Top Colors from Image</h1>
+        <form method="POST" enctype="multipart/form-data" class="mt-4">
+            {{ render_form(form) }}
+        </form>
+        {% if top_colors %}
+            <h2 class="mt-4">Top 10 Most Common Colors:</h2>
+            <ul>
+                {% for color, count in top_colors %}
+                    <li style="background-color: rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }});">{{ color }} - {{ count }} times</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
