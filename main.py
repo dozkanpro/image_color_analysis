@@ -4,9 +4,10 @@ from flask_bootstrap import Bootstrap5
 from flask import Flask, render_template
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'Abcde46792degb2hgh!4'
+app.config['SECRET_KEY'] = os.environ.get('IMAGE_SECRET_KEY')
 Bootstrap5(app)
 
 
