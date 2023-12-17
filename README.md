@@ -39,7 +39,6 @@
 
  - Analyze the file:    
    <div align="center"><img src="top_color_2.png" alt="UI Screenshot"/></div>
-     
-     
+        
 ## Contributing
    Contributions are welcome! Please fork the repository and create a pull request with your changes.
