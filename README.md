@@ -34,4 +34,6 @@
 - **Access the Application:** Open your web browser and navigate to http://localhost:5000 to access the application.
 
 ## Screenshots
-     <div align="center"><img src="example-render.gif" alt="GIF showing web service creation on render." /></div>
+     <div align="center"><img src="Top Color 2.png" alt="UI Screenshot"/></div>
+     <div align="center"><img src="Top Color 3.png" alt="UI Screenshot"/></div>
+     
